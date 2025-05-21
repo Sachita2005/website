@@ -102,8 +102,8 @@ p {
   z-index: 2;
 }
 .slider {
-  width: 500px; /* Width of a single image */
-  height: 300px;
+  width: 5000px; /* Width of a single image */
+  height: 700px;
   overflow: hidden;
   position: relative;
   margin: auto;
