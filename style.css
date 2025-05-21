@@ -102,32 +102,33 @@ p {
   z-index: 2;
 }
 .slider {
-  width: 900px; /* Width of a single image */
-  height: 700px;
+  height: 300px;
   overflow: hidden;
   position: relative;
-  margin: auto;
-  border-radius: 10px;
+  width: 100%;
+  background: #f0f0f0;
 }
 
 .slide-track {
   display: flex;
-  width: 400%; /* 4 images = 100% each */
-  animation: slide 16s steps(4) infinite;
+  width: calc(250px * 8); /* 8 images (4 original + 4 repeated) */
+  animation: scroll 20s linear infinite;
 }
 
 .slide {
-  width: 100%;
-  flex-shrink: 0;
+  width: 250px;
+  height: 100%;
   object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 10px;
+  margin-right: 10px;
 }
 
-/* Keyframes for sliding step-by-step */
-@keyframes slide {
-  0%   { transform: translateX(0%); }
-  25%  { transform: translateX(-100%); }
-  50%  { transform: translateX(-200%); }
-  75%  { transform: translateX(-300%); }
-  100% { transform: translateX(0%); } /* loop back */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
-
