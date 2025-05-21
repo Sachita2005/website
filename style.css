@@ -32,18 +32,18 @@ p {
 .scroll-container {
   display: flex;
   overflow-x: auto;
-  gap: 5px;
+  gap: 20px;
   padding: 20px;
   scroll-behavior: smooth;
 }
 
 .scroll-container::-webkit-scrollbar {
-  height: 10px;
+  height: 8px;
 }
 
 .scroll-container::-webkit-scrollbar-thumb {
   background: #888;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 .container {
@@ -52,11 +52,11 @@ p {
 
 .card {
   position: relative;
-  width: 300px;
-  height: 200px;
+  width: 200px;
+  height: 300px;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   background: #fff;
   text-align: center;
 }
@@ -101,29 +101,37 @@ p {
   padding: 5px 0;
   z-index: 2;
 }
-.slider {
-  height: 300px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  background: #f0f0f0;
+/* Basic page setup */
+body {
+  margin: 0;
+  padding: 0;
+  background: #fefefe;
+  font-family: sans-serif;
 }
 
+/* Outer wrapper that hides overflow */
+.slider {
+  height: 300px; /* adjust as needed */
+  overflow: hidden;
+  position: relative;
+}
+
+/* Container for all images, moves left */
 .slide-track {
   display: flex;
-  width: calc(250px * 8); /* 8 images (4 original + 4 repeated) */
+  width: calc(250px * 8); /* 8 images of 250px width */
   animation: scroll 20s linear infinite;
 }
 
+/* Image style */
 .slide {
   width: 250px;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   flex-shrink: 0;
-  border-radius: 10px;
-  margin-right: 10px;
 }
 
+/* Keyframes to move left continuously */
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -132,3 +140,4 @@ p {
     transform: translateX(-50%);
   }
 }
+
