@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -33,11 +33,6 @@ gap: 10px;
     transition: 0.5s;
     border-radius: 20px;
 }
-.container .card:hover .imgbx img
-{
-    opacity: 0;
-
-}
 .container .card .c3d
 {
     position:absolute;
@@ -46,9 +41,14 @@ gap: 10px;
     transform: translateY(0);
     transition: 0.5s;
 }
-.c3dontainer .card:hover .c3d
+.container .card:hover .imgbx img
+{
+    opacity: 0; 
+
+}
+.container .card:hover .c3d
 {
     opacity: 1;
     transform: translateY(-25%);
-    
+
 }
