@@ -102,7 +102,7 @@ p {
   z-index: 2;
 }
 .slider {
-  width: 250px; /* Width of a single image */
+  width: 500px; /* Width of a single image */
   height: 300px;
   overflow: hidden;
   position: relative;
