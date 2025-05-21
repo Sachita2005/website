@@ -108,12 +108,13 @@ p {
   margin: 20px auto;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
 .slides {
   display: flex;
   width: 400%; /* 4 images */
-  animation: slide 12s infinite;
+  animation: slide 20s linear infinite; /* Slower speed */
 }
 
 .slide {
@@ -122,10 +123,11 @@ p {
   object-fit: cover;
 }
 
+/* Keyframes for smooth sliding and loop back */
 @keyframes slide {
-  0% { transform: translateX(0%); }
-  25% { transform: translateX(-100%); }
-  50% { transform: translateX(-200%); }
-  75% { transform: translateX(-300%); }
+  0%   { transform: translateX(0%); }
+  25%  { transform: translateX(-100%); }
+  50%  { transform: translateX(-200%); }
+  75%  { transform: translateX(-300%); }
   100% { transform: translateX(0%); }
 }
