@@ -38,3 +38,17 @@ gap: 10px;
     opacity: 0;
 
 }
+.container .card .c3d
+{
+    position:absolute;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(0);
+    transition: 0.5s;
+}
+.c3dontainer .card:hover .c3d
+{
+    opacity: 1;
+    transform: translateY(-25%);
+    
+}
