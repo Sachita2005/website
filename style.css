@@ -131,3 +131,10 @@ p {
   75%  { transform: translateX(-300%); }
   100% { transform: translateX(0%); }
 }
+@keyframes slideAnimation {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-500px); }
+  40% { transform: translateX(-1000px); }
+  60% { transform: translateX(-1500px); }
+  80% { transform: translateX(-2000px); }
+  100% { transform: translateX(0); }}
