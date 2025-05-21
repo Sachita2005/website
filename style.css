@@ -114,7 +114,7 @@ p {
 .slides {
   display: flex;
   width: 400%; /* 4 images */
-  animation: slide 20s linear infinite; /* Slower speed */
+  animation: slide 60s linear infinite; /* Slower speed */
 }
 
 .slide {
