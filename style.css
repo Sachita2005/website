@@ -123,9 +123,7 @@ p {
   object-fit: cover;
 }
 
-
-}
-@keyframes slideAnimation {
+@keyframes slide {
   0% { transform: translateX(0); }
   20% { transform: translateX(-500px); }
   40% { transform: translateX(-1000px); }
